@@ -1,0 +1,29 @@
+Hi,
+
+Welcome to another impossible project i am probably not smart enough for :)
+
+Anywayyyy
+
+Time to make a rpg webbrouwser game
+
+Tools: React, Sass (later: php sql);
+
+First: map and movement
+
+other ideas:
+- Xp to level
+- turnbased fights
+- inventory
+- items weapons armor potions/food
+- story with choice options to make the briefings and deliveries less boring
+- hidden quest based on story choice
+- quests based on story choices
+- main quest (big fights)
+- side quests (kill beast, talk to someone, deliveries)
+- chests 
+- set class with skill tree/progression (like wow)
+
+later ideas:
+- crafting
+- game saving
+-
