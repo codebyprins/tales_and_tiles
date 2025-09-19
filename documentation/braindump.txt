@@ -27,3 +27,6 @@ later ideas:
 - crafting
 - game saving
 -
+
+~~Logo - game~~
+Logo - development
