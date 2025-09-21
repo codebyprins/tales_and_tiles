@@ -1,0 +1,65 @@
+:root {
+  //base
+  --fs-heading: $fs-base;
+  -fs-base: $fs-base;
+  //intro
+
+  //home
+
+  //game
+  --bg-game: rgb(45, 45, 104);
+
+  //tiles
+  --tile-width: 100px;
+  --tile-height: 100px;
+  --tile-bg-main: url('../../assets/images/tiles/grass.png');
+  --tile-bg-wall: url('../../assets/images/tiles/forest.png');
+
+  //miscelaneous
+  --health-bar: rgb(187, 67, 87);
+}
+
+html,
+body {
+  height: 100vh;
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $font-family-heading;
+  color: $heading-color;
+  font-size: var(--fs-heading);
+}
+
+h1 { font-size: $fs-h1; }
+h2 { font-size: $fs-h2; }
+h3 { font-size: $fs-h3; }
+h4 { font-size: $fs-h4; }
+h5 { font-size: $fs-h5; }
+
+p,
+a,
+li {
+  font-family: $font-family-base;
+  font-size: $fs-base;
+}
+
+a {
+  text-decoration: none;
+
+  &:visited {
+    color: $text-color;
+  }
+}
+
+
+#root,
+.screen {
+  width: 100%;
+  height: 100%;
+}

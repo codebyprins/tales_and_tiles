@@ -1,0 +1,11 @@
+.screen {
+    &--game {
+        background-color: var(--bg-game);
+    }
+    &-content {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        max-height: 100%;
+        background: #222;
+    }
+}

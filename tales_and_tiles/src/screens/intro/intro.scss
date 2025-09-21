@@ -1,0 +1,13 @@
+@use '../../styles/utils/mixins' as *;
+@use '../../styles/utils/variables' as *;
+
+.intro {
+    background: $bg-intro;
+
+    &-block {
+        @include flex-center;
+        flex-direction: column;
+        padding: 4rem;
+        background-color: lightgoldenrodyellow;
+    }
+}

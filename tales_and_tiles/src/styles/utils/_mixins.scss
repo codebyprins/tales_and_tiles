@@ -1,0 +1,19 @@
+@mixin btn($bg, $color, $border-color) {
+  border: 3px solid $border-color;
+  color: $color;
+  background-color: $bg;
+  box-shadow: 4px 5px 10px 0 rgba(0, 0, 0, .4);
+  padding: 5px 10px;
+  border-radius: 25px;
+  font-size: 35px;
+
+  &:visited {
+    color: $color;
+  }                            
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

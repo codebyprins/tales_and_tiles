@@ -1,21 +1,18 @@
-import { useState } from 'react'
-import './App.css'
-import logo from './assets/tales_and_tiles_64x64.png'
+import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import IntroScreen from "./screens/intro/intro";
+import HomeScreen from "./screens/home/home";
+import GameScreen from "./screens/game/game";
+import './styles/app.scss';
 
-function App() {
+export default function App() {
   return (
-    <>
-      <div>
-        <img src={logo}></img>
-        <br></br>
-        <h1>Tales and Tiles</h1>
-        <h2>Ready... Set... Start!</h2>
-        Welcome to my first attempt on my new Webbased RPG
-        <br></br>
-        We'll see where it goes :)
-      </div>
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<IntroScreen />} />
+        <Route path="/home" element={<HomeScreen />} />
+        <Route path="/game" element={<GameScreen />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
-
-export default App
