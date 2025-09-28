@@ -1,4 +1,4 @@
-import './intro.scss';
+import './Intro.scss';
 
 export default function Intro() {
     return (

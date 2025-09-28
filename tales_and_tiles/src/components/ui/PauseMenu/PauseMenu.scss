@@ -1,0 +1,15 @@
+@use '../../../styles/utils/mixins' as *;
+@use '../../../styles/utils/variables' as *;
+
+.pauseMenu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    @include flex-center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: antiquewhite;
+    border-radius: $radius-base;
+}

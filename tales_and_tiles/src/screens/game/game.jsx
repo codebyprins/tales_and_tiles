@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PauseMenu from "../../components/ui/PauseMenu/PauseMenu";
+import './Game.scss';
 
 export default function GameScreen({ goToMainMenu }) {
   const [paused, setPaused] = useState(false);
@@ -14,7 +15,7 @@ export default function GameScreen({ goToMainMenu }) {
   }, []);
 
   return (
-    <div className="screen screen--game">
+    <div className="game screen">
       <div className="screen-container">
         {paused && (
           <PauseMenu
@@ -26,6 +27,7 @@ export default function GameScreen({ goToMainMenu }) {
           />
         )}
         <div className="game-content">
+          Place game here
         </div>
       </div>
     </div>

@@ -1,7 +1,9 @@
-.screen {
-    &--game {
-        background-color: var(--bg-game);
-    }
+@use '../../styles/utils/mixins' as *;
+@use '../../styles/utils/variables' as *;
+
+.game {
+    background: $bg-screen;
+
     &-content {
         aspect-ratio: 16 / 9;
         width: 100%;

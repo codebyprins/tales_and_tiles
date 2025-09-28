@@ -1,11 +1,12 @@
-//Base
-$bg-color: #eee;
-$bg-intro: linear-gradient(45deg, #33775d, rgb(52, 139, 168));
+// 🎨 Colors
 
-//typography
+$bg-color: #eee;
+$bg-screen: linear-gradient(45deg, #33775d, rgb(52, 139, 168));
+
 $text-color: #0001;
 $heading-color: lightpink;
 
+// ✍️ Typography
 $font-family-heading: 'Artsem', sans-serif;
 $font-family-base: 'Exo', sans-serif;
 
@@ -15,3 +16,14 @@ $fs-h2: 40px;
 $fs-h3: 30px;
 $fs-h4: 25px;
 $fs-h5: 20px;
+
+
+// 📏 Spacing
+
+
+// 🔲 Shape
+$radius-base: 25px;
+
+// ⚡ Shadows & Effects
+
+// ⏱️ Animation / Transitions

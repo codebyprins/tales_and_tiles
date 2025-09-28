@@ -1,11 +1,12 @@
 import React,{ useState } from "react";
 import PauseMenu from "../../components/ui/PauseMenu/PauseMenu";
+import './Home.scss';
 
 export default function Home({ goToMainMenu, onPlay }) {
-  const [paused, setPaused] = useState(false);
+  const [pauseMenu, setPauseMenu] = useState(false);
 
   const handleKeyDown = (e) => {
-    if (e.key === "Escape") setPaused((prev) => !prev);
+    if (e.key === "Escape") setPauseMenu((prev) => !prev);
   };
 
   React.useEffect(() => {
@@ -14,15 +15,15 @@ export default function Home({ goToMainMenu, onPlay }) {
   }, []);
 
   return (
-    <div className="character-select">
-      {!paused && <p>🧙 Choose your hero...</p>}
-      {paused && (
+    <div className="home screen">
+      {!pauseMenu && <h2>🧙 Choose Your Hero...</h2>}
+      {pauseMenu && (
         <PauseMenu
           onResume={() => setPaused(false)}
           onExit={goToMainMenu}
         />
       )}
-      <a href="/game">Play</a>
+      <a className="intro-btn" href="/game">Play</a>
     </div>
   );
 }

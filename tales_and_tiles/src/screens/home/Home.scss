@@ -1,0 +1,9 @@
+@use '../../styles/utils/mixins' as *;
+@use '../../styles/utils/variables' as *;
+
+.home {
+    background: $bg-screen;
+    @include flex-center;
+    flex-direction: column;
+    background-color: lightgoldenrodyellow;
+}

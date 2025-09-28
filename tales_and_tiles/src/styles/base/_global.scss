@@ -36,11 +36,25 @@ h5 {
   font-size: var(--fs-heading);
 }
 
-h1 { font-size: $fs-h1; }
-h2 { font-size: $fs-h2; }
-h3 { font-size: $fs-h3; }
-h4 { font-size: $fs-h4; }
-h5 { font-size: $fs-h5; }
+h1 {
+  font-size: $fs-h1;
+}
+
+h2 {
+  font-size: $fs-h2;
+}
+
+h3 {
+  font-size: $fs-h3;
+}
+
+h4 {
+  font-size: $fs-h4;
+}
+
+h5 {
+  font-size: $fs-h5;
+}
 
 p,
 a,
@@ -59,7 +73,12 @@ a {
 
 
 #root,
-.screen {
+.screen,
+.screen-container {
   width: 100%;
   height: 100%;
+}
+
+.screen {
+  position: relative;
 }
