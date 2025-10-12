@@ -1,14 +1,17 @@
 import React from "react";
-import { Circle } from "react-konva";
+import { Image } from "react-konva";
+import useImage from 'use-image';
+import playerBase from '../../assets/images/player/base/player_base.png';
 
-export default function Player({ x, y, radius }) {
+export default function Player({ x, y }) {
+  const [playerImage] = useImage(playerBase);
   return (
-    <Circle
+    <Image
       x={x}
       y={y}
-      radius={radius}
-      fill="lightblue"
-      shadowBlur={8}
+      width={50}
+      height={64}
+      image={playerImage}
     />
   );
 }

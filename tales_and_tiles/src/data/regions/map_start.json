@@ -1,0 +1,8 @@
+{
+    "name": "Starting Area",
+    "tileSize": 32,
+    "width": 6400,
+    "heigth": 6400,
+    "defaultGroundTile": 0,
+    "spawnPointPlayer": {"x": 32, "y": 32}
+}
